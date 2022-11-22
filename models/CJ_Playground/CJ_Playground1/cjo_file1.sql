@@ -6,9 +6,7 @@ with source as (
     , R_COMMENT
     ,left(R_COMMENT,10) as COMMENT2
     ,COMMENT3
-    ,COMMENT4
-    ,COMMENT5    
-    ,COMMENT6        
+    ,COMMENT10
      from {{ ref('cjo_file') }}
 
 )
