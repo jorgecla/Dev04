@@ -1,6 +1,6 @@
 version: 2
 sources:
-  - name: tpch_CLJ
+  - name: tpch_ds
     description: source tpch data
     database: snowflake_sample_data
     schema: tpch_sf1
