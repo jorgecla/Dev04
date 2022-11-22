@@ -1,20 +1,16 @@
-with source as (
+-- select * from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.REGION
+with source as (select * from {{ source("tpch_ds", "region") }})
+select
+    r_regionkey,
+    r_name,
+    r_comment,
+    r_comment as comment3,
+    r_comment as comment4,
+    r_comment as comment5,
+    r_comment as comment6,
+    r_comment as comment8,
+    r_comment as comment9,
+    r_comment as comment10
 
-    --select * from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.REGION
-    select *
-    
-     from {{ source('tpch_CLJ', 'region') }}
-
-)
-select 
-R_REGIONKEY
-, R_NAME
-, R_COMMENT
-, R_COMMENT as COMMENT3
-, R_COMMENT as COMMENT4
-, R_COMMENT as COMMENT5
-, R_COMMENT as COMMENT6
-, R_COMMENT as COMMENT8
-
- from source
---add comments
+-- add comments
+from source
