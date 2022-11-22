@@ -5,7 +5,7 @@ config-version: 2
 profile: 'default'
 
 source-paths: ["models"]
-analysis-paths: ["analysis"]
+analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
@@ -24,3 +24,10 @@ models:
     marts:
       materialized: table
       snowflake_warehouse: small_wh    
+    CJ_Playground:
+      materialized: table
+      snowflake_warehouse: small_wh          
+
+      CJ_Playground1:
+        materialized: view
+        snowflake_warehouse: small_wh                
