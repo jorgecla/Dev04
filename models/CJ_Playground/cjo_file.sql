@@ -14,6 +14,7 @@ R_REGIONKEY
 , R_COMMENT as COMMENT4
 , R_COMMENT as COMMENT5
 , R_COMMENT as COMMENT6
+, R_COMMENT as COMMENT8
 
  from source
 --add comments
