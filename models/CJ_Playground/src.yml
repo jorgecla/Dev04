@@ -1,0 +1,16 @@
+version: 2
+sources:
+  - name: tpch_CLJ
+    description: source tpch data
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: region
+        description: region table
+        
+        columns:
+          - name: R_REGIONKEY
+            description: dd
+            tests: 
+              - unique
+              - not_null
