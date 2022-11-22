@@ -5,11 +5,6 @@ select
     r_name,
     r_comment,
     r_comment as comment3,
-    r_comment as comment4,
-    r_comment as comment5,
-    r_comment as comment6,
-    r_comment as comment8,
-    r_comment as comment9,
     r_comment as comment10
 
 -- add comments
