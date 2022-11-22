@@ -24,12 +24,3 @@ sources:
               - relationships:
                   to: source('tpch', 'orders')
                   field: o_orderkey
-      - name: lineitem2
-        description: main lineitem table
-        columns:
-          - name: l_orderkey
-            description: Foreign Key to O_ORDERKEY
-            tests:
-              - relationships:
-                  to: source('tpch', 'orders')
-                  field: o_orderkey                  
